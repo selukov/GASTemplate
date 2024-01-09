@@ -9,10 +9,9 @@
     "gpull": "clasp pull",
     "gpush": "clasp push",
     "gcreate": "clasp create --title \"PDF Form Filler\"  --rootDir ./src",
-    "lint": "./node_modules/.bin/eslint **/*.js",
-    "fix": "./node_modules/.bin/eslint **/*.js --fix --quiet",
-
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "./node_modules/.bin/eslint --ext js src/",
+    "fix": "./node_modules/.bin/eslint --ext js src/ --fix --quiet",
+    "format": "prettier --write src/"
   },
   "keywords": [],
   "author": "",
